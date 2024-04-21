@@ -1,0 +1,10 @@
+
+h1 {
+    text-transform: uppercase;
+    color: blueviolet;
+    position: sticky;
+    top: 0px;
+    background-color: aliceblue;
+    text-align: center;
+    left: 100vh;
+}

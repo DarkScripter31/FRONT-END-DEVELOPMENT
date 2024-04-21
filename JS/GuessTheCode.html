@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        input[type="number"] {
+            width: 5rem;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            border: 2px solid #ccc;
+            border-radius: 0.25rem;
+            text-align: center;
+        }
+
+        button {
+            font-size: 1.5rem;
+            padding: 0.5rem 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        #wrt {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        #points {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head">Guess the Number</h1>
+    <form id="guess-form">
+        <input type="number" id="num" autofocus>
+        <button type="submit">Check</button>
+    </form>
+    <p id="wrt"></p>
+    <p id="points">Points: 5</p>
+    <script>
+        const form = document.getElementById("guess-form");
+        const gnum = document.getElementById("num");
+        const rgwg = document.getElementById("wrt");
+        const pointsEl = document.getElementById("points");
+        let radnum = Math.floor(Math.random() * 10) + 1;
+        let points = 5;
+
+        function handleGuess(event) {
+            event.preventDefault();
+
+            const enterNumber = +gnum.value;
+
+            if (isNaN(enterNumber) || gnum.value === "") {
+                alert("Please enter a valid number.");
+                return;
+            }
+
+            if (radnum === enterNumber) {
+                rgwg.textContent = "You are right! You won the game!";
+                points += 2;
+                pointsEl.textContent = `Points: ${points}`;
+                gnum.value = "";
+                radnum = Math.floor(Math.random() * 10) + 1;
+                points = 5;
+                pointsEl.textContent = `Points: ${points}`;
+                alert("You won the game!");
+            } else {
+                points--;
+                rgwg.textContent = "You are wrong!";
+                if (points === 0) {
+                    alert("You are out!");
+                    location.reload();
+                } else {
+                    rgwg.textContent += ` Points remaining: ${points}`;
+                }
+            }
+
+            gnum.value = "";
+        }
+
+        form.addEventListener("submit", handleGuess);
+
+        gnum.addEventListener("keypress", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                form.dispatchEvent(new Event("submit"));
+            }
+        });
+    </script>
+</body>
+</html>

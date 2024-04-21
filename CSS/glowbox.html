@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .div1 {
+        box-shadow: 0 0 10px #ff00f2 , 0 0 10px #ff00f2 inset;
+        border: 2px solid #ff00f2;
+        height: 100px;
+        width: 100px;
+    }
+
+    .flex {
+        margin: 0;
+        border: 0;
+        display: flex;
+        background-color: black;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputbox {
+        position: relative;
+    }
+
+    .inputbox input {
+        padding: 15px 20px;
+        outline: none;
+        background: transparent;
+        border-radius: 5px;
+        color: #fff;
+        border: 1px solid #ee8456;
+        font-size: 1em;
+        transition: 0.4s cubic-bezier(0.05,0.81,0,0.93);
+    }
+
+    .inputbox input:focus ~ span, 
+    .inputbox input:valid ~ span {
+        font: 0.7em;
+        transform: translateX(14px)translateY(-7.5);
+        padding: 0 5px;
+        border-radius: 2px;
+        background: #212121;
+        letter-spacing: 0em;
+        border: 1px solid #ee8456;
+    }
+</style>
+</head>
+<body>
+    <div class="flex">
+        <div class="div1"></div>
+    </div>
+</body>
+</html>

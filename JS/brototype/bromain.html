@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div>
+        <h2>JavaScript Basics: Variables and Data Types</h2>
+        <!-- Task 1 -->
+        <p>Task 1: Declare a variable called 'x' and assign it the
+            value of 5. Print the value of x using console.log() in JavaScript.</p>
+        <script type="text/javascript">
+            var x = 5;
+            console.log(x);
+        </script>
+    </div>
+    <script type="text/javascript">// variables
+        var numberl = 3;
+        var number2 = 6;
+        // Redeclare possible
+        var number2 = 7;
+        console.log(numberl +number2) ;
+
+        // Redeclare not possible / reassign is possible
+        let place = 'chennai'
+        place = 'trichy'
+        console.log(place) ;
+
+        // redeclare not possible / reassign is not possible /
+        const pi = 3.14;
+        console.log(pi);
+
+        //Data types: string, number, boolean, null, undefined, symbols, objects;
+
+        //Functions
+
+        var milk = 23;
+        var biscuit = 20;
+        var coffeepowder = 50;
+        console.log("Just an addition:",milk + biscuit + coffeepowder)
+
+        var bread = 52;
+        var jam = 100;
+        var butter = 200;
+        console.log("Just an calcultion:",bread + jam + butter)
+
+        function calculate(a,b,c) {
+            var result = a+b+c;
+            return result;
+        }
+
+        console.log("Using a function:",calculate(milk,biscuit,coffeepowder))
+        console.log("Using a function:",calculate(bread,jam,butter))
+
+        for(var person = 0; person <100; person++) {
+            if (person % 2 == 0 ) {
+                console.log('Even Number',person);
+            }
+            else {
+            console.log('Odd Number',person);
+            }
+        }
+        
+    </script>
+</body>
+</html>
+
+

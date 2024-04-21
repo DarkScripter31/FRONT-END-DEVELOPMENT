@@ -1,0 +1,53 @@
+.container{
+    width: 1348px;
+    height: 615px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black;
+    border-style: dotted;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.outer-box {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bolder;
+    font-family: cursive;
+    border: 2px black;
+    border-style: double;
+}
+
+#box1 {
+    background-color: red;
+}
+
+#box2 {
+    background-color: green;
+}
+
+#box3 {
+    background-color: blue;
+}
+
+#box4 {
+    background-color: chocolate;
+}
+

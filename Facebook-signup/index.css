@@ -1,0 +1,167 @@
+body, h1, h2, p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-div {
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.logo {
+    font-size: 56px;
+    color: #0866ff;
+    padding: 15px 0px;
+}
+
+.signup-form {
+    background-color: white;
+    width: 432px;
+    border-radius: 9px;
+    box-shadow: #dadde1 0 0 10px 5px;
+}
+
+.form-heading {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.form-heading h2{
+    padding-bottom: 5px;
+}
+
+.input-fields {
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+.half-width {
+    width: 48.58%;
+    display: flex;
+}
+
+.full-width {
+    width: 100%;
+    display: flex;
+}
+
+label {
+    color: #606770;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    margin-bottom: 0;
+    margin-top: 2px;
+}
+
+.dob-div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.quat-width {
+    width: 31.3%;
+    display: flex;
+}
+
+.radio-btn {
+    border: 1px solid #dadde1;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 36px   ;
+}
+
+.radio-label {
+    padding-bottom: 0;
+    font-size: 15px;
+    color: #1c1e21;
+}
+
+.radio-input {
+    margin: 0;
+    width: auto;
+    color: #1c1e21;
+}
+
+.c1 {
+    margin: 11px 0px;
+    font-size: 11px;
+    color: #777;
+}
+
+.c2 {
+    margin-bottom: 11px;
+    font-size: 11px;
+    color: #777;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #385898;
+}
+
+.btn-div {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-btn {
+    border: none;
+    background-color: #00a400;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 60px;
+    
+}
+.account-link {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.anchor-acc {
+    color: #1877f2;
+    font-size: 17px;
+}
+

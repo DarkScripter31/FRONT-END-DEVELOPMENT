@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    color: #ffffff;
+    width: 100%;
+    border: none;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
